@@ -4,6 +4,7 @@
   "description": "",
   "default": "src/index.html",
   "scripts": {
+    "start": "parcel",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   "homepage": "https://github.com/jgtorres95/myFlix-React-client#readme",
   "dependencies": {
     "axios": "^0.26.1",
+    "parcel": "^2.0.0-rc.0",
     "prop-types": "^15.8.1",
     "react": "^18.0.0",
     "react-bootstrap": "^2.2.3",
