@@ -114,8 +114,9 @@ class MainView extends React.Component {
     )
       .then((response) => {
         console.log(response);
-        this.getUser();
-        window.open(`/users/${username}`, '_self');
+        this.props.setUser(response.data);
+        //this.getUser();
+        //window.open(`/users/${username}`, '_self');
         alert('Removed from favorites');
       })
       .catch(function (error) {
@@ -133,8 +134,9 @@ class MainView extends React.Component {
     )
       .then((response) => {
         console.log(response);
-        this.getUser();
-        window.open(`/`, '_self');
+        this.props.setUser(response.data);
+        //this.getUser();
+        //window.open(`/`, '_self');
         alert('Added to favorites');
       })
       .catch(function (error) {
