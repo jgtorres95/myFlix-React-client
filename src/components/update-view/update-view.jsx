@@ -7,6 +7,8 @@ import axios from 'axios';
 
 import { Link } from "react-router-dom";
 
+import { setUser } from "../../actions/actions";
+
 // create UpdateView component 
 export function UpdateView(props) {
   let user = localStorage.getItem("user");
@@ -128,6 +130,8 @@ export function UpdateView(props) {
     </Form>
   )
 }
+
+export default connect(null, { setUser })(UpdateView);
 
 UpdateView.PropTypes = {
   user: PropTypes.shape({
