@@ -40,10 +40,12 @@ export function UpdateView(props) {
       .then(response => {
         const data = response.data;
         console.log(data);
-        window.open(`/users/${username}`, '_self')
+        props.setUser(response.data);
+        localStorage.setItem('user', response.data.Username);
+        props.onBackClick();
       })
       .catch(e => {
-        console.log('error updating user')
+        console.log('error updating user', e);
       });
   };
 
@@ -119,7 +121,7 @@ export function UpdateView(props) {
         <Form.Control type="date" placeholder={localStorage.getItem('birthday')} onChange={e => setBirthday(e.target.value)} />
       </Form.Group>
 
-      <Button className="update-button" variant="dark" onClick={handleUpdate}>
+      <Button className="update-button" variant="dark" onClick={e => handleUpdate(e)}>
         Submit
       </Button>
       <Link to={`/users/${user}`}>
