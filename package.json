@@ -1,6 +1,5 @@
 {
   "name": "myflix-react-client",
-  "main": "src/index.html",
   "version": "1.0.0",
   "description": "",
   "default": "src/index.html",
