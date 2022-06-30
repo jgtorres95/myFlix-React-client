@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 
 import { setUser } from "../../actions/actions";
 
+import { connect } from 'react-redux';
+
 // create UpdateView component 
 export function UpdateView(props) {
   let user = localStorage.getItem("user");
