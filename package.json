@@ -2,7 +2,7 @@
   "name": "myflix-react-client",
   "version": "1.0.0",
   "description": "",
-  "default": "src/index.html",
+  "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
