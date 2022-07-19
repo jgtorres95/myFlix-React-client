@@ -30,6 +30,7 @@ export function LoginView(props) {
   };
 
   return (
+    <div >
     <Form>
       <Form.Group controlId="formUsername">
         <Form.Label>Username:</Form.Label>
@@ -47,6 +48,7 @@ export function LoginView(props) {
         < Button className="login-button" variant="secondary" type="link">Register</Button>
       </Link>
     </Form >
+    </div>
   );
 }
 
