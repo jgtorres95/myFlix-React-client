@@ -8,6 +8,13 @@ Form {
 }
 Form {
   margin-top: 5%;
+  width: 50%;
+  margin: auto;
+}
+
+.form-label {
+  color: whitesmoke;
+  font-weight: 800;
 }
 
 .login-button {
@@ -40,6 +47,10 @@ img {
 .main-view {
   margin-top: 5%;
 }
+body {
+  background-image: url("movie-theater-image.81efb8e0.jpg");
+}
+
 .app-container {
   font-family: "PT Sans", sans-serif;
 }
