@@ -34216,7 +34216,7 @@ function RegistrationView(props) {
             }),
             /*#__PURE__*/ _jsxRuntime.jsx(_buttonDefault.default, {
                 className: "login-button",
-                variant: "dark",
+                variant: "primary",
                 type: "submit",
                 onClick: handleRegistration,
                 __source: {
@@ -34235,7 +34235,7 @@ function RegistrationView(props) {
                 __self: this,
                 children: /*#__PURE__*/ _jsxRuntime.jsx(_buttonDefault.default, {
                     className: "update-button",
-                    variant: "dark",
+                    variant: "secondary",
                     __source: {
                         fileName: "src/components/registration-view/registration-view.jsx",
                         lineNumber: 119
@@ -34300,105 +34300,112 @@ function LoginView(props) {
             console.log('no such user');
         });
     };
-    return(/*#__PURE__*/ _jsxRuntime.jsxs(_formDefault.default, {
+    return(/*#__PURE__*/ _jsxRuntime.jsx("div", {
         __source: {
             fileName: "src/components/login-view/login-view.jsx",
             lineNumber: 33
         },
         __self: this,
-        children: [
-            /*#__PURE__*/ _jsxRuntime.jsxs(_formDefault.default.Group, {
-                controlId: "formUsername",
-                __source: {
-                    fileName: "src/components/login-view/login-view.jsx",
-                    lineNumber: 34
-                },
-                __self: this,
-                children: [
-                    /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Label, {
-                        __source: {
-                            fileName: "src/components/login-view/login-view.jsx",
-                            lineNumber: 35
-                        },
-                        __self: this,
-                        children: "Username:"
-                    }),
-                    /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Control, {
-                        type: "text",
-                        placeholder: "Enter username",
-                        value: username,
-                        onChange: (e)=>setUsername(e.target.value)
-                        ,
-                        __source: {
-                            fileName: "src/components/login-view/login-view.jsx",
-                            lineNumber: 36
-                        },
-                        __self: this
-                    })
-                ]
-            }),
-            /*#__PURE__*/ _jsxRuntime.jsxs(_formDefault.default.Group, {
-                controlId: "formPassword",
-                __source: {
-                    fileName: "src/components/login-view/login-view.jsx",
-                    lineNumber: 39
-                },
-                __self: this,
-                children: [
-                    /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Label, {
-                        __source: {
-                            fileName: "src/components/login-view/login-view.jsx",
-                            lineNumber: 40
-                        },
-                        __self: this,
-                        children: "Password: "
-                    }),
-                    /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Control, {
-                        type: "password",
-                        placeholder: "Enter password",
-                        value: password,
-                        onChange: (e)=>setPassword(e.target.value)
-                        ,
-                        __source: {
-                            fileName: "src/components/login-view/login-view.jsx",
-                            lineNumber: 41
-                        },
-                        __self: this
-                    })
-                ]
-            }),
-            /*#__PURE__*/ _jsxRuntime.jsx(_buttonDefault.default, {
-                className: "login-button",
-                variant: "primary",
-                type: "submit",
-                onClick: handleSubmit,
-                __source: {
-                    fileName: "src/components/login-view/login-view.jsx",
-                    lineNumber: 43
-                },
-                __self: this,
-                children: "Log In"
-            }),
-            /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
-                to: "/register",
-                __source: {
-                    fileName: "src/components/login-view/login-view.jsx",
-                    lineNumber: 46
-                },
-                __self: this,
-                children: /*#__PURE__*/ _jsxRuntime.jsx(_buttonDefault.default, {
+        children: /*#__PURE__*/ _jsxRuntime.jsxs(_formDefault.default, {
+            __source: {
+                fileName: "src/components/login-view/login-view.jsx",
+                lineNumber: 34
+            },
+            __self: this,
+            children: [
+                /*#__PURE__*/ _jsxRuntime.jsxs(_formDefault.default.Group, {
+                    controlId: "formUsername",
+                    __source: {
+                        fileName: "src/components/login-view/login-view.jsx",
+                        lineNumber: 35
+                    },
+                    __self: this,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Label, {
+                            __source: {
+                                fileName: "src/components/login-view/login-view.jsx",
+                                lineNumber: 36
+                            },
+                            __self: this,
+                            children: "Username:"
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Control, {
+                            type: "text",
+                            placeholder: "Enter username",
+                            value: username,
+                            onChange: (e)=>setUsername(e.target.value)
+                            ,
+                            __source: {
+                                fileName: "src/components/login-view/login-view.jsx",
+                                lineNumber: 37
+                            },
+                            __self: this
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsxs(_formDefault.default.Group, {
+                    controlId: "formPassword",
+                    __source: {
+                        fileName: "src/components/login-view/login-view.jsx",
+                        lineNumber: 40
+                    },
+                    __self: this,
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Label, {
+                            __source: {
+                                fileName: "src/components/login-view/login-view.jsx",
+                                lineNumber: 41
+                            },
+                            __self: this,
+                            children: "Password: "
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsx(_formDefault.default.Control, {
+                            type: "password",
+                            placeholder: "Enter password",
+                            value: password,
+                            onChange: (e)=>setPassword(e.target.value)
+                            ,
+                            __source: {
+                                fileName: "src/components/login-view/login-view.jsx",
+                                lineNumber: 42
+                            },
+                            __self: this
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx(_buttonDefault.default, {
                     className: "login-button",
-                    variant: "secondary",
-                    type: "link",
+                    variant: "primary",
+                    type: "submit",
+                    onClick: handleSubmit,
+                    __source: {
+                        fileName: "src/components/login-view/login-view.jsx",
+                        lineNumber: 44
+                    },
+                    __self: this,
+                    children: "Log In"
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx(_reactRouterDom.Link, {
+                    to: "/register",
                     __source: {
                         fileName: "src/components/login-view/login-view.jsx",
                         lineNumber: 47
                     },
                     __self: this,
-                    children: "Register"
+                    children: /*#__PURE__*/ _jsxRuntime.jsx(_buttonDefault.default, {
+                        className: "login-button",
+                        variant: "secondary",
+                        type: "link",
+                        __source: {
+                            fileName: "src/components/login-view/login-view.jsx",
+                            lineNumber: 48
+                        },
+                        __self: this,
+                        children: "Register"
+                    })
                 })
-            })
-        ]
+            ]
+        })
     }));
 }
 _s(LoginView, "wuQOK7xaXdVz4RMrZQhWbI751Oc=");
