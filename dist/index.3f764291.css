@@ -1,8 +1,20 @@
+.movie-card {
+  margin-bottom: 5%;
+}
+
 .movie-card-button {
   margin: 1%;
 }
 
-
+.movie-card img {
+  margin: 2rem;
+}
+.genre-view-button {
+  margin: 1%;
+}
+.director-view-button {
+  margin: 1%;
+}
 Form {
   margin-top: 5%;
 }
@@ -46,6 +58,10 @@ img {
 
 .main-view {
   margin-top: 5%;
+}
+
+.col-md-8 {
+  background-color: white;
 }
 body {
   background-image: url("movie-theater-image.81efb8e0.jpg");
