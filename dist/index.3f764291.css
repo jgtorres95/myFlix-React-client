@@ -7,7 +7,7 @@
 }
 
 .movie-card img {
-  margin: 1rem 1rem;
+  border-radius: 1.5rem;
 }
 .genre-view-button {
   margin: 1%;
