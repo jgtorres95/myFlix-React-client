@@ -19,7 +19,7 @@ export class DirectorView extends React.Component {
           <p>{director.Bio}</p>
         </Row>
         <Row>
-          <Button variant="dark" onClick={() => { onBackClick(null); }}>Back</Button>
+          <Button className="director-view-button" variant="dark" onClick={() => { onBackClick(null); }}>Back</Button>
         </Row>
       </Container>
     )
