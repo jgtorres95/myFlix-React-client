@@ -10,6 +10,18 @@ import { Link } from "react-router-dom";
 
 // create MovieCard component
 export class MovieCard extends React.Component {
+  constructor(props) {
+    super(props);
+    this.toggleClass = this.toggleClass.bind(this);
+
+    this.state = {
+      active: false,
+    };
+  }
+  toggleClass() {
+    const currentState = this.state.active;
+    this.setState({ active: !currentState });
+  }
 
   render() {
     const { movie, handleFavorite } = this.props;
