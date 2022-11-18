@@ -1,6 +1,6 @@
 .movie-card {
-  margin-bottom: 5%;
   padding: 1.2rem;
+  margin: 0.5rem 2rem 2rem 2rem;
 }
 
 .movie-card-button {
@@ -9,4 +9,22 @@
 
 .movie-card img {
   border-radius: 1.5rem;
+}
+
+.movie-card-star {
+  font-size: 2rem;
+  opacity: 30%;
+  margin: 0 1rem;
+  transition: all 300ms ease;
+}
+
+.movie-card-star:hover {
+  opacity: 90%;
+}
+
+.movie-card-star-active {
+  opacity: 90%;
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: all 300ms ease;
 }
