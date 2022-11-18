@@ -1,8 +1,21 @@
-.profile-card {
-  margin: auto; 
+.profile__container-card {
+  width: 50%;
+  margin: 2rem auto;
 }
 
-.profile-view-button {
-    margin: 2%;
+.profile__container-btn {
+  margin: 1rem 1rem;
 }
 
+.favorites__container-btn {
+  margin: 1.2rem auto;
+  width: 50%;
+}
+
+.favorites__container {
+  margin-bottom: 1rem;
+}
+
+.favorites__container-item {
+  margin: 2rem auto;
+}
