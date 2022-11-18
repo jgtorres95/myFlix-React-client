@@ -15,16 +15,13 @@ h1 {
 }
 
 Form {
-  margin-top: 5%;
-  width: 50%;
+  width: 25%;
   margin: auto;
-} 
-
-.form-label {
-  color:whitesmoke;
-  font-weight: 800;
 }
 
-.login-button {
-  margin: 1%;
+.login__label {
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 1rem 0;
 }
