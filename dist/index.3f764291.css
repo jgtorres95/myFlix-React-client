@@ -1,5 +1,5 @@
 .movie-card {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   padding: 1.2rem;
 }
 
@@ -10,6 +10,24 @@
 .movie-card img {
   border-radius: 1.5rem;
 }
+
+.movie-card-star {
+  font-size: 2rem;
+  opacity: 30%;
+  margin: 0 1rem;
+  transition: all 300ms ease;
+}
+
+.movie-card-star:hover {
+  opacity: 90%;
+}
+
+.movie-card-star-active {
+  opacity: 90%;
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: all 300ms ease;
+}
 .genre-view-button {
   margin: 1%;
 }
@@ -19,19 +37,31 @@
 Form {
   margin-top: 5%;
 }
-Form {
-  margin-top: 5%;
-  width: 50%;
-  margin: auto;
-}
-
-.form-label {
+.login__container {
   color: whitesmoke;
   font-weight: 800;
 }
 
-.login-button {
-  margin: 1%;
+.login__container Button {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+Form {
+  width: 50%;
+  margin: auto;
+}
+
+.login__label {
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 1rem 0;
 }
 .label {
   font-weight: 700;
@@ -46,29 +76,46 @@ img {
 .movie-view-button {
   margin: 1%;
 }
+.profile__container {
+  background: white;
+}
+
 .profile-card {
-  margin: auto;
+  margin: 2rem auto;
 }
 
 .profile-view-button {
   margin: 2%;
 }
+
+.favorites__container {
+  margin-bottom: 1rem;
+}
+
+.favorites__container-item {
+  margin: 2rem auto;
+}
 .update-button {
   margin: 1%;
 }
+.nav__brand {
+  font-weight: 800;
+}
 
+.nav__link {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
 .main-view {
   margin-top: 5%;
 }
-
-.col-md-8 {
-  background-color: white;
-}
-body {
-  background-image: url("movie-theater-image.81efb8e0.jpg");
-}
-
+html,
 .app-container {
   font-family: "PT Sans", sans-serif;
+  background: #141414;
 }
 /*# sourceMappingURL=index.3f764291.css.map */
