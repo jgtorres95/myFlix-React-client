@@ -37,7 +37,16 @@ export class MovieCard extends React.Component {
               Open
             </Button>
           </Link>
-          <Button className="movie-card-button" variant="dark" onClick={() => { handleFavorite(movies) }}>Add to Favs</Button>
+
+          <AiFillStar
+            onClick={() => {
+              handleFavorite(movies);
+              this.toggleClass();
+            }}
+            className={
+              this.state.active ? "movie-card-star-active" : "movie-card-star"
+            }
+          ></AiFillStar>
         </Card.Body>
       </Card>
     );
