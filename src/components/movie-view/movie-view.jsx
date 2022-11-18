@@ -1,13 +1,12 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Button from 'react-bootstrap/Button';
-import './movie-view.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import Button from "react-bootstrap/Button";
+import "./movie-view.scss";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 // create MovieView component
 export class MovieView extends React.Component {
-
   render() {
     const { movie, onBackClick } = this.props;
     return (
@@ -35,9 +34,16 @@ export class MovieView extends React.Component {
           </Button>
         </Link>
 
-        <Button className="movie-view-button" variant="dark" onClick={() => { onBackClick(null); }}>Back</Button>
-
-      </div >
+        <Button
+          className="movie-view-button"
+          variant="dark"
+          onClick={() => {
+            onBackClick(null);
+          }}
+        >
+          Back
+        </Button>
+      </div>
     );
   }
 }
@@ -46,7 +52,7 @@ MovieView.propTypes = {
   movie: PropTypes.shape({
     Title: PropTypes.string.isRequired,
     Description: PropTypes.string.isRequired,
-    ImagePath: PropTypes.string.isRequired
+    ImagePath: PropTypes.string.isRequired,
   }).isRequired,
-  onBackClick: PropTypes.func.isRequired
+  onBackClick: PropTypes.func.isRequired,
 };
