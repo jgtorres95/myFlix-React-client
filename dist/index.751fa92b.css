@@ -1,0 +1,152 @@
+
+.movie-card {
+  padding: 1.2rem;
+  margin: 0.5rem 2rem 2rem 2rem;
+}
+
+.movie-card-button {
+  margin: 1%;
+}
+
+.movie-card img {
+  border-radius: 1.5rem;
+}
+
+.movie-card-star {
+  font-size: 2rem;
+  opacity: 30%;
+  margin: 0 1rem;
+  transition: all 300ms ease;
+}
+
+.movie-card-star:hover {
+  opacity: 90%;
+}
+
+.movie-card-star-active {
+  opacity: 90%;
+  font-size: 2rem;
+  margin: 0 1rem;
+  transition: all 300ms ease;
+}
+.filter__container {
+  padding: 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.col-md-4 {
+  display: flex;
+}
+.genre__container {
+  color: white;
+}
+
+.genre-view-button {
+  margin-top: 2rem;
+}
+.director__container {
+  color: white;
+}
+
+.director-view-button {
+  margin-top: 2rem;
+}
+Form {
+  margin-top: 5%;
+}
+.login__container {
+  color: whitesmoke;
+  font-weight: 800;
+  background-image: url("movie_theater.aaff1e25.jpeg");
+}
+
+.login__container Button {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+Form {
+  width: 25%;
+  margin: auto;
+}
+
+.login__label {
+  color: whitesmoke;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+.movie-view {
+  color: white;
+}
+
+.label {
+  font-weight: 700;
+  font-size: large;
+}
+
+img {
+  display: block;
+  margin: 15px auto;
+}
+
+.movie-view-button {
+  margin-top: 2rem;
+  margin-right: 1.5rem;
+}
+.profile__container-card {
+  width: 50%;
+  margin: 2rem auto;
+}
+
+.profile__container-btn {
+  margin: 1rem 1rem;
+}
+
+.favorites__container-btn {
+  margin: 1.2rem auto;
+  width: 50%;
+}
+
+.favorites__container {
+  margin-bottom: 1rem;
+}
+
+.favorites__container-item {
+  margin: 2rem auto;
+}
+.update-button {
+  margin: 1rem 1rem 0 0;
+}
+
+Form Label {
+  color: white;
+  margin-top: 1rem;
+}
+.nav__brand {
+  font-weight: 800;
+}
+
+.nav__link {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+.main-view {
+  margin-top: 5%;
+}
+html,
+.app-container {
+  font-family: "PT Sans", sans-serif;
+  background: #141414;
+}
+/*# sourceMappingURL=index.751fa92b.css.map */
