@@ -1,17 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button';
-import './director-view.scss';
+import React from "react";
+import PropTypes from "prop-types";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Button from "react-bootstrap/Button";
+import "./director-view.scss";
 
-// create DirectorView component 
+// create DirectorView component
 export class DirectorView extends React.Component {
   render() {
     const { director, onBackClick } = this.props;
 
     return (
-      <Container>
+      <Container className="director__container">
         <Row>
           <h1>{director.Name}</h1>
         </Row>
@@ -19,10 +19,18 @@ export class DirectorView extends React.Component {
           <p>{director.Bio}</p>
         </Row>
         <Row>
-          <Button className="director-view-button" variant="dark" onClick={() => { onBackClick(null); }}>Back</Button>
+          <Button
+            className="director-view-button"
+            variant="dark"
+            onClick={() => {
+              onBackClick(null);
+            }}
+          >
+            Back
+          </Button>
         </Row>
       </Container>
-    )
+    );
   }
 }
 
@@ -32,5 +40,5 @@ DirectorView.propTypes = {
     Bio: PropTypes.string.isRequired,
     Birth: PropTypes.string.isRequired,
   }).isRequired,
-  onBackClick: PropTypes.func.isRequired
+  onBackClick: PropTypes.func.isRequired,
 };
