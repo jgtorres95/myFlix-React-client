@@ -25,16 +25,17 @@ export class MovieCard extends React.Component {
 
   render() {
     const { movie, handleFavorite } = this.props;
-
     let movies = movie;
     return (
-      <Card className="movie-card" border="dark" bg="light" text="dark">
+      <Card className="movie-card" border="dark" bg="dark" text="light">
         <Card.Img variant="top" src={movie.ImagePath} />
         <Card.Body>
           <Card.Title>{movie.Title}</Card.Title>
           <Card.Text>{movie.Description}</Card.Text>
           <Link to={`/movies/${movie._id}`}>
-            <Button className="movie-card-button" variant="dark">Open</Button>
+            <Button className="movie-card-button" variant="light">
+              Open
+            </Button>
           </Link>
           <Button className="movie-card-button" variant="dark" onClick={() => { handleFavorite(movies) }}>Add to Favs</Button>
         </Card.Body>
