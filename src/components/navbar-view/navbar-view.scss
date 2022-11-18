@@ -1,0 +1,13 @@
+.nav__brand {
+  font-weight: 800;
+}
+
+.nav__link {
+  color: white;
+  font-size: 1.2rem;
+}
+
+//hide nav links when user is not logged in.
+.hidden {
+  display: none;
+}
