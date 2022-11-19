@@ -37,8 +37,8 @@ function MoviesList(props) {
         <Col
           md={4}
           key={m._id}
-          className="movies__container"
           style={{ padding: 0 }}
+          className="p-2 mr-5 mb-5"
         >
           <MovieCard
             className="movie__card"
