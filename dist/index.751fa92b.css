@@ -10,6 +10,7 @@
 
 .movie-card img {
   border-radius: 1.5rem;
+  padding: 1rem;
 }
 
 .movie-card-star {
@@ -58,7 +59,6 @@ Form {
 .login__container {
   color: whitesmoke;
   font-weight: 800;
-  background-image: url("movie_theater.aaff1e25.jpeg");
 }
 
 .login__container Button {
