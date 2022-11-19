@@ -1,7 +1,6 @@
 
 .movie-card {
   padding: 1.2rem;
-  margin: 0.5rem 2rem 2rem 2rem;
 }
 
 .movie-card-button {
@@ -142,8 +141,9 @@ Form Label {
   display: none;
 }
 .main-view {
-  margin-top: 5%;
+  margin-top: 1rem;
 }
+body,
 html,
 .app-container {
   font-family: "PT Sans", sans-serif;
