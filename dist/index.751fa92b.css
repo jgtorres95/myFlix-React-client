@@ -55,6 +55,11 @@
 Form {
   margin-top: 5%;
 }
+
+.registration-button {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
 .login__container {
   color: whitesmoke;
   font-weight: 800;
