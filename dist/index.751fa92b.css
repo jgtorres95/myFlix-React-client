@@ -21,6 +21,7 @@
 
 .movie-card-star:hover {
   opacity: 90%;
+  cursor: pointer;
 }
 
 .movie-card-star-active {
