@@ -5,17 +5,13 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
+import { setUser } from "../../actions/actions";
 
 import { connect } from "react-redux";
 import axios from "axios";
 
 import { Link } from "react-router-dom";
 import "./profile-view.scss";
-
-const mapStateToProps = (state) => {
-  const { movies, user } = state;
-  return { movies, user };
-};
 
 // create ProfileView component
 export class ProfileView extends React.Component {
@@ -32,6 +28,22 @@ export class ProfileView extends React.Component {
         localStorage.clear();
         alert("Profile successfully deleted");
         window.open("/", "_self");
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+
+  componentDidMount() {
+    let username = localStorage.getItem("user");
+    let token = localStorage.getItem("token");
+    let url = `https://cf-myflix-app.herokuapp.com/users/${username}`;
+    axios
+      .get(url, {
+        headers: { Authorization: `Bearer ${token}` },
+      })
+      .then((response) => {
+        this.props.setUser(response.data);
       })
       .catch(function (error) {
         console.log(error);
@@ -110,7 +122,7 @@ export class ProfileView extends React.Component {
   }
 }
 
-export default connect(mapStateToProps)(ProfileView);
+export default connect(null, { setUser })(ProfileView);
 
 ProfileView.propTypes = {
   user: PropTypes.shape({
